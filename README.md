@@ -75,7 +75,12 @@ Generates key retail performance metrics:
 ```text
 RetailStoreChallenge/
 │
-├── RetailStoreChallenge.cpp
+├── BillingAssistant.cpp      # Level 1 - Smart Billing Assistant
+├── DiscountEngine.cpp        # Level 2 - Discount Engine
+├── GSTSys.cpp                # Level 3 - GST Billing System
+├── RetailProfit.cpp          # Level 4 - Retail Profit Analyzer
+├── PerfDashboard.cpp         # Level 5 - Daily Performance Dashboard
+├── RetailStoreChallenge.cpp  # Combined Menu-Driven Application
 └── README.md
 ```
 
