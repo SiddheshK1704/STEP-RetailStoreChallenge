@@ -4,7 +4,7 @@ int main()
 {
     int year, month;
     cin>>year>>month;
-    if(year>1 && year < 9099 ){
+    if(year>1 && year < 9999 ){
         if((year%4==0 && year%100!=0)||(year%400==0)){
             cout<<"Year type = Leap";
         }
@@ -17,7 +17,7 @@ int main()
     }
     cout<<"\n";
     if(month>=1 && month<=12){
-       if(month==1){
+       if(month==1 || month==3 || month==5 || month==7 || month==8 || month==10 || month==12){
         cout<<"Days-31";
         }
         else if(month==2){
@@ -28,36 +28,9 @@ int main()
                 cout<<"Days-28";
             }
         }
-        else if(month==3){
-            cout<<"Days-31";
-        }
-        else if(month==4){
+        else if((month==4)||(month==6)||(month==9)||(month==11)){
             cout<<"Days-30";
         }
-        else if(month==5){
-            cout<<"Days-31";
-        }
-        else if(month==6){
-            cout<<"Days-30";
-        }
-        else if(month==7){
-            cout<<"Days-31";
-        }
-        else if(month==8){
-            cout<<"Days-31";
-        }
-        else if(month==9){
-            cout<<"Days-30";
-        }
-        else if(month==10){
-            cout<<"Days-31";
-        }
-        else if(month==11){
-            cout<<"Days-30";
-        }
-        else if(month==12){
-            cout<<"Days-31";
-        } 
     }
     else{
         cout<<"Invalid month";
