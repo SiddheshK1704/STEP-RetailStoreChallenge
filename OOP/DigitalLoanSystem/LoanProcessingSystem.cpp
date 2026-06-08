@@ -83,9 +83,7 @@ public:
         double r = l.getInterestRate() / (12 * 100);
         int n = l.getTenure();
 
-        double emi =
-            (P * r * pow(1 + r, n)) /
-            (pow(1 + r, n) - 1);
+        double emi = (P * r * pow(1 + r, n)) / (pow(1 + r, n) - 1);
 
         return emi;
     }
