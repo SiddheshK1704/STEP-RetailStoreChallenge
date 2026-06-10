@@ -1,4 +1,5 @@
 #include <iostream>
+#include<iomanip>
 using namespace std;
 
 int main(){
@@ -17,7 +18,7 @@ int main(){
     float FinalPrice = Price + GSTAmt;
 
     cout << "Product Name: "<< ProductName <<endl;
-    cout << "Price: "<< Price << endl;
-    cout << "Final Payable Amount (inlcuding GST): "<< FinalPrice << endl;
+    cout <<fixed << setprecision(2) << "Price: "<< Price << endl;
+    cout <<fixed << setprecision(2) << "Final Payable Amount (inlcuding GST): "<< FinalPrice << endl;
     return 0;
 }
