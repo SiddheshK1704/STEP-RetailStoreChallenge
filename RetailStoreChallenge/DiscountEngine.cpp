@@ -1,4 +1,5 @@
 #include <iostream>
+#include<iomanip>
 using namespace std;
 int main(){
     float ProductPrice;
@@ -14,6 +15,6 @@ int main(){
 
     cout << "\n";
     
-    cout <<"Discounted Amount:"<<DisAmt << "|" << "Final Price: " << FinalPrice << endl;
+    cout <<"Discounted Amount:"<<fixed << setprecision(2) << DisAmt << " | " << "Final Price: " << fixed << setprecision(2) << FinalPrice << endl;
     return 0;
 }
