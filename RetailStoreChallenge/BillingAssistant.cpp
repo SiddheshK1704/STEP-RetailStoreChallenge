@@ -4,7 +4,7 @@ using namespace std;
 int main(){
     string ProductName;
     float Price;
-    int Quantity;
+    float Quantity;
 
     cout << "Enter the product name:";
     cin >> ProductName;
@@ -18,7 +18,7 @@ int main(){
     cout << "\n";
     
     cout << "Product Name: "<< ProductName <<endl;
-    int TotalCost = Price * Quantity;
+    float TotalCost = Price * Quantity;
     cout << "Total Cost: "<< TotalCost << endl;
 
     return 0;
