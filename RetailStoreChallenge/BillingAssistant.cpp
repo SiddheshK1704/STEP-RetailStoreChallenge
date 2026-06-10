@@ -1,10 +1,11 @@
 #include <iostream>
+#include<iomanip>
 using namespace std;
 
 int main(){
     string ProductName;
-    float Price;
-    float Quantity;
+    double Price;
+    int Quantity;
 
     cout << "Enter the product name:";
     cin >> ProductName;
@@ -18,8 +19,8 @@ int main(){
     cout << "\n";
     
     cout << "Product Name: "<< ProductName <<endl;
-    float TotalCost = Price * Quantity;
-    cout << "Total Cost: "<< TotalCost << endl;
+    double TotalCost = Price*Quantity;
+    cout << "Total Cost: "<< fixed << setprecision(2) << TotalCost << endl;
 
     return 0;
 }
