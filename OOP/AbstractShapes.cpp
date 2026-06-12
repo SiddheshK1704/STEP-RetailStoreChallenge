@@ -7,7 +7,6 @@ public:
     virtual int area() = 0;
     virtual string name() = 0;
 
-    virtual ~Shape() {}
 };
 
 class Rectangle : public Shape {
@@ -101,10 +100,6 @@ int main() {
     }
 
     cout << "Total Area: " << totalArea << endl;
-
-    for (Shape* shape : shapes) {
-        delete shape;
-    }
 
     return 0;
 }
